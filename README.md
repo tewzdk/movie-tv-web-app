@@ -29,6 +29,9 @@ List of Framework and libraries used
 **Install dependencies**:\
 `npm install`
 
+**Add a api key to the environments file**:\
+`The api key should be inserted in the enviroment object in the field: api_key`
+
 **Start the development server**:\
 `npm start or ng serve`
 
