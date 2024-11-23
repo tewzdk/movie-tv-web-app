@@ -1,0 +1,14 @@
+<div class="search">
+  <input
+    class="search__input"
+    type="text"
+    [(ngModel)]="value"
+    placeholder="Search"
+    (input)="onInputChange($event)"
+  />
+  @if (value) {
+  <button class="search__clear" (click)="onClear()" aria-label="Clear">
+    <span>&times;</span>
+  </button>
+  }
+</div>

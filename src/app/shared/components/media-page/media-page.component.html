@@ -1,0 +1,19 @@
+<div class="media">
+  <div class="media__header">
+    <h2
+      class="media__header__title"
+      [ngClass]="{ media__header__loading: loading$() | async }"
+    >
+      Movies and TV Shows
+    </h2>
+    <tabs [selectedTabIndex]="selectedTabIndex()"></tabs>
+    <search-field
+      class="media__search"
+      (searchValueChange)="searchValueChanged($event)"
+    ></search-field>
+  </div>
+  <!-- Fixed header -->
+  <div class="media__content">
+    <list [list$]="list$()" (loadMore)="loadMoreItems()"></list>
+  </div>
+</div>

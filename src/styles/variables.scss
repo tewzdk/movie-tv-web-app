@@ -1,0 +1,26 @@
+// This file contains all the variables that are used in the application.
+// This can easily be configured to change the theme of the application.
+:root {
+    --primary-color: #1877f2;
+    --accent-color: #FFD700;
+    --background-color: #ffffff;
+    --text-color: #333333;
+    --accent-text-color: #606770;
+    --input-background: #f0f2f5;
+    --gradient-color-1: #ff7e5f;
+    --gradient-color-2: #feb47b;
+    --gradient-color-3: #6a11cb;
+    --gradient-color-4: #2575fc;
+}
+
+.dark-theme {
+    --primary-color: #1E90FF;
+    --background-color: #121212;
+    --text-color: #f0f0f0;
+    --accent-text-color: #b0b0b0;
+    --input-background: #333333;
+    --gradient-color-1: #1a2a6c;
+    --gradient-color-2: #b21f1f;
+    --gradient-color-3: #fdbb2d;
+    --gradient-color-4: #1a2a6c;
+}

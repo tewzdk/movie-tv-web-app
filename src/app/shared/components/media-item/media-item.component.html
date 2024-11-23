@@ -1,0 +1,25 @@
+<div class="media">
+  <div class="media__image">
+    <img
+      [src]="imageUrl || defaultImageUrl"
+      (error)="onImageError($event)"
+      alt="{{ media().title || media().name }}"
+    />
+  </div>
+
+  <div>
+    <h3>{{ media().title || media().name }}</h3>
+    <div class="media__subtitle">
+      <rating [voteAverage]="media().vote_average"></rating>
+
+      <p class="media__date">
+        {{ media().release_date ? "Release date" : "First air date" }}:
+        {{
+          media().release_date || media().first_air_date | date : "dd MMM yyyy"
+        }}
+      </p>
+    </div>
+
+    <p>{{ media().overview }}</p>
+  </div>
+</div>

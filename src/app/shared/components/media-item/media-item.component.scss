@@ -1,0 +1,33 @@
+.media {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    padding: 20px;
+    background-color: var(--input-background);
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    overflow-y: auto;
+    /* Add a scrollbar when content overflows */
+
+    &__title {
+        display: flex;
+    }
+
+    &__image {
+        min-width: 300px;
+        object-fit: cover;
+        border-radius: 5px;
+    }
+
+    &__subtitle {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: baseline;
+    }
+
+    &__date {
+        font-size: 0.8rem;
+        color: var(--accent-text-color);
+    }
+}

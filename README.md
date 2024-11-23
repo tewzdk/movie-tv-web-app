@@ -1,27 +1,52 @@
-# MovieTvWebApp
+# Movie Tv WebApp
+This Angular application provides a dynamic media catalog featuring TV shows and movies. Users can browse through two tabs: one for TV shows and another for movies. Both lists support infinite scrolling and include search functionality for seamless content discovery. Each media item is displayed with an image, title, rating, overview, and release date, offering an engaging and informative experience. 📺🎥✨
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 17.0.8.
+## Features
+- Color Theming
+- Infinite scroll
+- Search functionality
+- Reusable components
+- Angular animations
+- Routing
 
-## Development server
+## Technologies
+List of Framework and libraries used
+- Angular 18
+- Typescript
+- SCSS for styling with the BEM syntax
+- RxJs
+- Angular Animations
+- NGX Infinite Scroll
+- Angular Material
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+## Installation
+**Clone the repository**:\
+`git clone https://github.com/your-repo/project-name.git`
 
-## Code scaffolding
+**Navigate to the project directory**:\
+`cd movie-tv-web-app`
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+**Install dependencies**:\
+`npm install`
 
-## Build
+**Start the development server**:\
+`npm start or ng serve`
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+## Usage
+**Open the app in a browser**
+http://localhost:4200
 
-## Running unit tests
-
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+## Architecture
+- src
+    - app
+        - pages
+        - services
+        - shared
+            - components
+            - models
+        - store
+            - movies
+            - shows
+    - assets (images)
+    - environment
+    - styles (themes)

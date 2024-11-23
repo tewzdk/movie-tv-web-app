@@ -1,0 +1,8 @@
+<media-page
+  [selectedTabIndex]="0"
+  [list$]="shows$"
+  [loading$]="loading$"
+  [error$]="error$"
+  (loadMore)="loadMoreItems()"
+  (searchValueChange)="searchValueChanged($event)"
+></media-page>

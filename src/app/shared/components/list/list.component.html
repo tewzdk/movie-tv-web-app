@@ -1,0 +1,23 @@
+<div
+  *ngIf="list$() | async as items"
+  class="list"
+  infiniteScroll
+  [scrollWindow]="false"
+  [infiniteScrollDistance]="1"
+  [infiniteScrollThrottle]="50"
+  (scrolled)="loadMoreItems()"
+>
+  <div #topAnchor class="list__anchor"></div>
+  <!-- This will just display Top 10 if the entire list is only 20 -->
+  <!-- Since I decided to have infinite scroll with no trigger button below slice will show only 10-->
+  <!-- until the first loadMoreItems is triggered -->
+  @if (items.length === 20) { @for (media of items.slice(0, 10); track media;) {
+  <div class="list__item">
+    <media-item [media]="media"></media-item>
+  </div>
+  } } @else { @for (media of items; track media;) {
+  <div class="list__item">
+    <media-item [media]="media"></media-item>
+  </div>
+  } }
+</div>

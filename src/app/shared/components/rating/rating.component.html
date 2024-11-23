@@ -1,0 +1,8 @@
+<div class="rating" [@fadeInAnimation]>
+  <div class="rating__stars">
+    <ng-container *ngFor="let star of starsArray; let i = index">
+      <span class="rating__star" [class.filled]="i < roundedRating">&#9733;</span>
+    </ng-container>
+  </div>
+  <span class="rating__score">{{ voteAverage() | number : "1.1-1" }}</span>
+</div>
