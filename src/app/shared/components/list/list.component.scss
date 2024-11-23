@@ -10,11 +10,10 @@
   &__anchor {
     height: 1px;
   }
-}
 
-.loading {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 80vh;
+  &__empty{
+    display: flex;
+    justify-content: center;
+    padding-top: 10px;
+  }
 }
